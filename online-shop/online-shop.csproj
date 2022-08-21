@@ -1,0 +1,155 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>online_shop</RootNamespace>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net5.0\appsettings.json" />
+    <Content Include="bin\Debug\net5.0\online-shop.deps.json" />
+    <Content Include="bin\Debug\net5.0\online-shop.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\net5.0\online-shop.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net5.0\BouncyCastle.Crypto.dll" />
+    <None Include="bin\Debug\net5.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\Dapper.dll" />
+    <None Include="bin\Debug\net5.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\Google.Protobuf.dll" />
+    <None Include="bin\Debug\net5.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\K4os.Compression.LZ4.dll" />
+    <None Include="bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll" />
+    <None Include="bin\Debug\net5.0\K4os.Hash.xxHash.dll" />
+    <None Include="bin\Debug\net5.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Configuration.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Configuration.FileExtensions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Configuration.Json.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Physical.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.FileSystemGlobbing.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.TestPlatform.CommunicationUtilities.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.TestPlatform.CoreUtilities.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.TestPlatform.CrossPlatEngine.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.TestPlatform.Utilities.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.Common.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Debug\net5.0\MySql.Data.dll" />
+    <None Include="bin\Debug\net5.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net5.0\NuGet.Frameworks.dll" />
+    <None Include="bin\Debug\net5.0\online-shop.dll" />
+    <None Include="bin\Debug\net5.0\online-shop.exe" />
+    <None Include="bin\Debug\net5.0\online-shop.pdb" />
+    <None Include="bin\Debug\net5.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\ref\online-shop.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\net5.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Debug\net5.0\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\net5.0\System.Security.Permissions.dll" />
+    <None Include="bin\Debug\net5.0\System.Text.Encodings.Web.dll" />
+    <None Include="bin\Debug\net5.0\System.Text.Json.dll" />
+    <None Include="bin\Debug\net5.0\System.Windows.Extensions.dll" />
+    <None Include="bin\Debug\net5.0\testhost.dll" />
+    <None Include="bin\Debug\net5.0\testhost.exe" />
+    <None Include="bin\Debug\net5.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\Ubiety.Dns.Core.dll" />
+    <None Include="bin\Debug\net5.0\xunit.abstractions.dll" />
+    <None Include="bin\Debug\net5.0\xunit.assert.dll" />
+    <None Include="bin\Debug\net5.0\xunit.core.dll" />
+    <None Include="bin\Debug\net5.0\xunit.execution.dotnet.dll" />
+    <None Include="bin\Debug\net5.0\xunit.runner.reporters.netcoreapp10.dll" />
+    <None Include="bin\Debug\net5.0\xunit.runner.utility.netcoreapp10.dll" />
+    <None Include="bin\Debug\net5.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\ZstdNet.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.30" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

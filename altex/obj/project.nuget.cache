@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "phkZaJOjxa8shiXlfWR27I20HCKWPa/A5RYdMC0dSqO6DyD8MNpL+IGOJWHWyCJgIpXm/v15GrlXV9aufbsivQ==",
+  "success": true,
+  "projectFilePath": "W:\\Documents\\SQL\\online-shop\\altex\\altex.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anndr\\.nuget\\packages\\fontawesome.sharp\\6.1.1\\fontawesome.sharp.6.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

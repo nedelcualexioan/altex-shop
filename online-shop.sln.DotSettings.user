@@ -1,0 +1,15 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6ff88a0f_002De445_002D4fa2_002Da431_002D8a216f3a7ff0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="testCreate" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::B53A8126-2FBA-424B-A886-C0FCCEF66505::net5.0::tests.ProductsRepoTest.testGetByName&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B53A8126-2FBA-424B-A886-C0FCCEF66505::net5.0::tests.ProductsRepoTest.testGetById&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B53A8126-2FBA-424B-A886-C0FCCEF66505::net5.0::tests.ProductsRepoTest.deleteById&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B53A8126-2FBA-424B-A886-C0FCCEF66505::net5.0::tests.ProductsRepoTest.testCreate&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B53A8126-2FBA-424B-A886-C0FCCEF66505::net5.0::tests.ProductsRepoTest.deleteByName&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B53A8126-2FBA-424B-A886-C0FCCEF66505::net5.0::tests.ProductsRepoTest.testUpdateNameById&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B53A8126-2FBA-424B-A886-C0FCCEF66505::net5.0::tests.OptionsRepoTest.testGetAll&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B53A8126-2FBA-424B-A886-C0FCCEF66505::net5.0::tests.OrdersRepoTest.testGetAll&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B53A8126-2FBA-424B-A886-C0FCCEF66505::net5.0::tests.OrderDetRepoTest.testGetAll&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B53A8126-2FBA-424B-A886-C0FCCEF66505::net5.0::tests.CustRepoTest.testIsCustomer&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
