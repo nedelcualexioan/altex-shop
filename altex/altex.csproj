@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\online-shop\online-shop.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="ComponentFactory.Krypton.Docking">
       <HintPath>C:\Users\anndr\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
     </Reference>

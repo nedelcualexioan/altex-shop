@@ -2,7 +2,7 @@
 
 namespace online_shop.Models
 {
-    public class Option
+    public class Option : IComparable<Option>
     {
         private int id;
         private String option_name;
@@ -40,6 +40,15 @@ namespace online_shop.Models
             }
 
             return false;
+        }
+
+        public int CompareTo(Option other)
+        {
+            if (this.id > other.id)
+                return 1;
+            if (this.id < other.id)
+                return -1;
+            return 0;
         }
 
         public int Id

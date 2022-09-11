@@ -2,7 +2,7 @@
 
 namespace online_shop.Models
 {
-    public class Customer
+    public class Customer : IComparable<Customer>
     {
         private int id;
         private String email;
@@ -61,6 +61,15 @@ namespace online_shop.Models
             }
 
             return false;
+        }
+
+        public int CompareTo(Customer other)
+        {
+            if (this.id > other.id)
+                return 1;
+            if (this.id < other.id)
+                return -1;
+            return 0;
         }
 
         public int Id

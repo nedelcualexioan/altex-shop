@@ -1,6 +1,10 @@
-﻿using online_shop.Models;
+﻿using System;
+using System.Diagnostics;
+using online_shop.Models;
 using online_shop.Repositories;
+using online_shop.Exceptions;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace tests
 {
@@ -8,15 +12,25 @@ namespace tests
     {
         private ProductRepository prodRepo;
 
-        public ProductsRepoTest()
+        private ITestOutputHelper output;
+        public ProductsRepoTest(ITestOutputHelper output)
         {
             prodRepo = new ProductRepository();
+            this.output = output;
+
+            output.WriteLine("aici");
+
         }
 
         [Fact]
         public void testGetAll()
         {
-            Assert.NotEmpty(prodRepo.getAll());
+            Assert.Throws<EntryDatabaseException>(() =>
+            {
+
+                prodRepo.getAll();
+
+            });
         }
 
         [Fact]

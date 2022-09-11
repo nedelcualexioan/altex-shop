@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "online-shop", "online-shop\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tests", "tests\tests.csproj", "{B53A8126-2FBA-424B-A886-C0FCCEF66505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "altex", "altex\altex.csproj", "{053DDC76-CCDF-46F4-8CB0-E6EACE450685}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "altex", "altex\altex.csproj", "{053DDC76-CCDF-46F4-8CB0-E6EACE450685}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{5719F243-B0EA-41AB-8A83-95DA359E2E3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,9 +26,10 @@ Global
 		{B53A8126-2FBA-424B-A886-C0FCCEF66505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B53A8126-2FBA-424B-A886-C0FCCEF66505}.Release|Any CPU.Build.0 = Release|Any CPU
 		{053DDC76-CCDF-46F4-8CB0-E6EACE450685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{053DDC76-CCDF-46F4-8CB0-E6EACE450685}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{053DDC76-CCDF-46F4-8CB0-E6EACE450685}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{053DDC76-CCDF-46F4-8CB0-E6EACE450685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5719F243-B0EA-41AB-8A83-95DA359E2E3A}.Debug|Any CPU.ActiveCfg = Debug
+		{5719F243-B0EA-41AB-8A83-95DA359E2E3A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

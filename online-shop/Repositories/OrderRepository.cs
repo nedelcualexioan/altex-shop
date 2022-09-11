@@ -16,12 +16,25 @@ namespace online_shop.Repositories
             db = new DataAcces();
 
             var builder = new ConfigurationBuilder()
-                .SetBasePath(@"W:\Documents\SQL\online-shop\online-shop\bin\Debug\net5.0")
+                .SetBasePath(Environment.CurrentDirectory)
                 .AddJsonFile("appsettings.json");
 
             var config = builder.Build();
 
             this.connectionString = config.GetConnectionString("Default");
+        }
+
+        public OrderRepository(string text)
+        {
+            db = new DataAcces();
+
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Environment.CurrentDirectory)
+                .AddJsonFile("appsettings.json");
+
+            var config = builder.Build();
+
+            this.connectionString = config.GetConnectionString(text);
         }
 
         public List<Order> getAll()

@@ -16,7 +16,7 @@ namespace online_shop.Repositories
             db = new DataAcces();
 
             var builder = new ConfigurationBuilder()
-                .SetBasePath(@"W:\Documents\SQL\online-shop\online-shop\bin\Debug\net5.0")
+                .SetBasePath(Environment.CurrentDirectory)
                 .AddJsonFile("appsettings.json");
 
             var config = builder.Build();
@@ -24,9 +24,22 @@ namespace online_shop.Repositories
             this.connectionString = config.GetConnectionString("Default");
         }
 
+        public CategoryRepository(string text)
+        {
+            db = new DataAcces();
+
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(@"W:\Documents\SQL\online-shop\online-shop\bin\Debug\net5.0")
+                .AddJsonFile("appsettings.json");
+
+            var config = builder.Build();
+
+            this.connectionString = config.GetConnectionString(text);
+        }
+
         public List<Category> getAll()
         {
-            string sql = "SELECT * FROM categories";
+            string sql = "SELECT * FROM categories ORDER BY id";
 
             return db.LoadData<Category, dynamic>(sql, new { }, connectionString);
         }
@@ -41,7 +54,7 @@ namespace online_shop.Repositories
 
         public Category getByName(String name)
         {
-            string sql = "SELECT * FROM categories WHERE full_name = @full_name";
+            string sql = "SELECT * FROM categories WHERE name = @name";
 
             return db.LoadData<Category, dynamic>(sql, new { name }, connectionString)[0];
 

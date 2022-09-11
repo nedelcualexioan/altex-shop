@@ -1,6 +1,8 @@
-﻿namespace online_shop.Models
+﻿using System;
+
+namespace online_shop.Models
 {
-    public class ProductOptions
+    public class ProductOptions : IComparable<ProductOptions>
     {
         private int id;
         private int option_id;
@@ -42,6 +44,15 @@
             }
 
             return false;
+        }
+
+        public int CompareTo(ProductOptions other)
+        {
+            if (this.id > other.id)
+                return 1;
+            if (this.id < other.id)
+                return -1;
+            return 0;
         }
 
         public int Id

@@ -2,30 +2,33 @@
 
 namespace online_shop.Models
 {
-    public class Product
+    public class Product : IComparable<Product>
     {
         private int id;
         private String name;
         private int price;
         private String image;
+        private String folder;
         private int category_id;
         private int stock;
 
-        public Product(int id, string name, int price, string image, int categoryId, int stock)
+        public Product(int id, string name, int price, string image, string folder, int categoryId, int stock)
         {
             this.id = id;
             this.name = name;
             this.price = price;
             this.image = image;
+            this.folder = folder;
             category_id = categoryId;
             this.stock = stock;
         }
 
-        public Product(string name, int price, string image, int categoryId, int stock)
+        public Product(string name, int price, string image, string folder, int categoryId, int stock)
         {
             this.name = name;
             this.price = price;
             this.image = image;
+            this.folder = folder;
             category_id = categoryId;
             this.stock = stock;
         }
@@ -43,6 +46,7 @@ namespace online_shop.Models
             text += "Name: " + name + "\n";
             text += "Price: " + price + "\n";
             text += "Image: " + image + "\n";
+            text += "Folder: " + folder + "\n";
             text += "Category ID: " + category_id + "\n";
             text += "Stock: " + stock + "\n";
 
@@ -54,10 +58,20 @@ namespace online_shop.Models
             if (obj is Product p)
             {
                 return p.Name == this.name && p.Price == this.price && p.Image == this.image &&
+                       p.Folder == this.folder &&
                        p.CategoryId == this.category_id && p.Stock == this.stock;
             }
 
             return false;
+        }
+
+        public int CompareTo(Product other)
+        {
+            if (this.id > other.id)
+                return 1;
+            if (this.id < other.id) 
+                return -1;
+            return 0;
         }
 
         public int Id
@@ -82,6 +96,12 @@ namespace online_shop.Models
         {
             get => image;
             set => image = value;
+        }
+
+        public string Folder
+        {
+            get => folder;
+            set => folder = value;
         }
 
         public int CategoryId

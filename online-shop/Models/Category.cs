@@ -2,7 +2,7 @@
 
 namespace online_shop.Models
 {
-    public class Category
+    public class Category : IComparable<Category>
     {
         private int id;
         private String name;
@@ -52,6 +52,15 @@ namespace online_shop.Models
             }
 
             return false;
+        }
+
+        public int CompareTo(Category other)
+        {
+            if (this.id > other.id)
+                return 1;
+            if (this.id < other.id)
+                return -1;
+            return 0;
         }
     }
 }

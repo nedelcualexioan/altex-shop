@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using online_shop.Exceptions;
 using online_shop.Models;
 using online_shop.Repositories;
+using online_shop.Services;
 
 namespace online_shop
 {
@@ -9,11 +13,16 @@ namespace online_shop
     {
         static void Main(string[] args)
         {
-            CategoryRepository repo = new CategoryRepository();
 
-            List<Category> list = repo.getAll();
+            string path = @"W:\Documents\SQL\online-shop\altex\bin\Debug\net5.0-windows\images\products\s22ultra";
 
-            Console.WriteLine(list[0].ToString());
+            foreach (string s in Directory.GetDirectories(path))
+            {
+                Console.WriteLine(s);
+            }
+            
+
+
         }
     }
 }

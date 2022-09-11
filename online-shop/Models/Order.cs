@@ -2,7 +2,7 @@
 
 namespace online_shop.Models
 {
-    public class Order
+    public class Order : IComparable<Order>
     {
         private int id;
         private int customer_id;
@@ -57,6 +57,15 @@ namespace online_shop.Models
             }
 
             return false;
+        }
+
+        public int CompareTo(Order other)
+        {
+            if (this.id > other.id)
+                return 1;
+            if (this.id < other.id)
+                return -1;
+            return 0;
         }
 
         public int Id
